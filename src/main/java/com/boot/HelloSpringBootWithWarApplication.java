@@ -6,14 +6,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class HelloSpringBootWithWarApplication extends SpringBootServletInitializer{
+public class HelloSpringBootWithWarApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(HelloSpringBootWithWarApplication.class, args);
 	}
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(HelloSpringBootWithWarApplication.class);
-	}
 }
