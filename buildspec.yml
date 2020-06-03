@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+    - echo "This is pre build phase"
+  build:
+    commands:
+    - echo "This is build phase"
+    - mvn clean prepare-package war:exploded
+  post_build:
+    commands:
+    - echo "This is post-build phase"
+    - mv target/helldeploy/WEB-INF/lib ./
+artifacts:
+  files:
+    - hellodeploy/**/*
+  
