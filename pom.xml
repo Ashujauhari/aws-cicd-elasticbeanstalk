@@ -46,10 +46,10 @@
 	<build>
 		<plugins>
 
-			<!-- <plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<executions>
+				<!-- <executions>
 					<execution>
 						<id>default-war</id>
 						<phase>none</phase>
@@ -57,7 +57,7 @@
 					<execution>
 						<id>war-exploded</id>
 						<configuration>
-							<webappDirectory>target/hellodeploy</webappDirectory>
+							<webappDirectory>target/deploy</webappDirectory>
 							<archiveClasses>true</archiveClasses>
 						</configuration>
 						<phase>prepare-package</phase>
@@ -65,8 +65,8 @@
 							<goal>exploded</goal>
 						</goals>
 					</execution>
-				</executions>
-			</plugin> -->
+				</executions> -->
+			</plugin> 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

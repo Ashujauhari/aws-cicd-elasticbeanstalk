@@ -6,12 +6,12 @@ phases:
   build:
     commands:
     - echo "This is build phase"
-    - mvn clean install
+    - mvn clean prepare-package war:exploded
   post_build:
     commands:
     - echo "This is post-build phase"
-    - mv target/helldeploy/WEB-INF/lib ./
+    - mv target/hello ./
 artifacts:
   files:
-    - hellodeploy/**/*
+    - deploy/**/*
   
