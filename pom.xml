@@ -12,12 +12,14 @@
 	<groupId>com.boot</groupId>
 	<artifactId>Hello_SpringBoot_With_War</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<name>Hello_SpringBoot_With_War</name>
 	<description>Hello_SpringBoot_With_War</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
