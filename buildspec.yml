@@ -18,6 +18,7 @@ artifacts:
   files:
     # - target/deploy/**/*
      - Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
+     - .ebextensions/**/*
      
   base-directory: 'target/Hello_SpringBoot_With_War'
 
