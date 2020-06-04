@@ -1,23 +1,18 @@
+# This file controls the AWS CodeBuild
+
 version: 0.2
 phases:
-  commands:
-       - echo "This is pre build phase"
+  pre_build:
+    commands:
+    - echo "Entered the pre-build phase"
   build:
     commands:
-    - echo "This is build phase"
-    # - mvn clean prepare-package war:exploded
-    - mvn package
-    - mv target/Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war    Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
+    - echo "Entered build phase"
+    - mvn clean prepare-package war:exploded
   post_build:
     commands:
-    - echo "This is post-build phase"
+    - echo "Entered the post-build phase"
     - mv target/deploy ./
 artifacts:
   files:
-    # - target/deploy/**/*
-     - Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
-     - .ebextensions/**/*
-     
-  base-directory: 'target/Hello_SpringBoot_With_War'
-
-  
+    - deploy/**/*
