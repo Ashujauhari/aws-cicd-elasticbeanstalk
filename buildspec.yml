@@ -7,11 +7,12 @@ phases:
     commands:
     - echo "Entered build phase"
     - mvn package
+    - mv target/Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war   Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
   post_build:
     commands:
     - echo "Entered the post-build phase"
-    - mv target/Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war   Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
+  
 artifacts:
   files:
-    - Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
+    - target/Hello_SpringBoot_With_War-0.0.1-SNAPSHOT.war
     - .ebextensions/**/*
