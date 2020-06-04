@@ -13,5 +13,6 @@ phases:
     - mv target/deploy ./
 artifacts:
   files:
-    - deploy/**/*
+    - targte/deploy/**/*
+  discard-paths: yes
   
