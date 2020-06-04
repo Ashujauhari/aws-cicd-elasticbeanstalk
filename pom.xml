@@ -65,7 +65,7 @@
 							<goal>exploded</goal>
 						</goals>
 					</execution>
-				</executions>				
+				</executions> 				
 			</plugin> 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

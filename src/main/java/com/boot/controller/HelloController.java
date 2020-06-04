@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {	
 	@GetMapping("/hello")
 	public String greet()
-	{	return ("Welcome to Spring Boot!!!!!!!!!!!!!!");	}
+	{	return ("Welcome to AWS CICD");	}
 }
