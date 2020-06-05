@@ -44,11 +44,10 @@
 
 	<build>
 		<plugins>
-
 			<plugin><!-- don't pack the war  -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<executions>
+			 <executions>
 					<execution>
 						<id>default-war</id>
 						<phase>none</phase>

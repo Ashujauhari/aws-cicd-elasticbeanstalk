@@ -1,4 +1,5 @@
 # This file controls the AWS CodeBuild
+# https://medium.com/@hasithakaushan/automate-spring-boot-app-deployment-on-aws-infrastructure-using-github-and-aws-codepipelines-3cb4aec78a7b
 
 version: 0.2
 phases:
