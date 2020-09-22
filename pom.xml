@@ -11,11 +11,11 @@
 	</parent>
 	<groupId>com.boot</groupId>
 	<artifactId>Hello_SpringBoot_With_War</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	
+	<version>0.0.1-SNAPSHOT</version>  
+	<packaging>war</packaging>	
 	<name>Hello_SpringBoot_With_War</name>
 	<description>Demo project for Spring Boot with AWS and CodePipeline</description>
-
+	
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -40,11 +40,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			 <groupId>org.springframework.boot</groupId>
+ 			  <artifactId>spring-boot-starter-tomcat</artifactId>
+ 			  <scope>provided</scope>
+        </dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-			<plugin><!-- don't pack the war  -->
+			<!-- <plugin>don't pack the war 
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 			 <executions>
@@ -64,7 +70,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
